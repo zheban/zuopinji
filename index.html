@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王庆雨 · AIGC 视觉与内容创作作品集</title>
+<meta name="description" content="王庆雨的作品集：AIGC 影像、短剧策划、品牌文案与文创设计。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324211d'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-size='36' fill='%23d8b98a' font-family='serif'%3E王%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page-grain"></div>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#top"><span class="brand-mark">王</span><span class="brand-text">王庆雨<small>PORTFOLIO 2026</small></span></a>
+  <nav class="nav">
+    <a href="#motion">影像作品</a>
+    <a href="#visual">视觉设计</a>
+    <a href="#writing">剧本文案</a>
+    <a href="#contact">联系我</a>
+  </nav>
+  <button class="nav-toggle" aria-label="展开菜单"><span></span><span></span></button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> AIGC 内容创作 · 影像 / 文案 / 设计</div>
+      <h1>用<em>影像</em>讲故事<br>用<em>创意</em>造世界</h1>
+      <p class="hero-lead">你好，我是王庆雨。专注 AIGC 影像制作、短剧剧本策划与品牌文创设计，擅长把文化母题转化为可传播、可落地的视觉内容。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#motion">浏览作品 <span>→</span></a>
+        <a class="btn btn-ghost" href="mailto:1207093768@qq.com">联系我</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>07</strong><span>影像作品</span></div>
+        <div><strong>34</strong><span>视觉作品</span></div>
+        <div><strong>10</strong><span>剧本与文案</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="art-frame art-main"><img src="assets/images/character-02.webp" alt="AI 漫剧人物四视图"></div>
+      <div class="art-frame art-side"><img src="assets/images/wenchuang-04.webp" alt="文创设计"></div>
+      <div class="art-seal">创<br>作</div>
+    </div>
+  </div>
+  <div class="hero-scroll"><span></span>向下滚动</div>
+</section>
+
+<section class="section" id="motion">
+  <div class="section-head reveal">
+    <div><div class="kicker">01 / MOTION</div><h2>影像作品</h2></div>
+    <p>从 AI 短剧到文化影像与影视解说，点击卡片即可在线播放。</p>
+  </div>
+  <div class="filter-bar reveal" data-filter-bar="video"></div>
+  <div class="grid video-grid" id="videoGrid"></div>
+</section>
+
+<section class="section section-tint" id="visual">
+  <div class="section-head reveal">
+    <div><div class="kicker">02 / VISUAL</div><h2>视觉设计</h2></div>
+    <p>AI 视觉实验、人物资产、文创产品与平面海报。点击图片可放大查看。</p>
+  </div>
+  <div class="filter-bar reveal" data-filter-bar="image"></div>
+  <div class="grid image-grid" id="imageGrid"></div>
+</section>
+
+<section class="section" id="writing">
+  <div class="section-head reveal">
+    <div><div class="kicker">03 / WORDS</div><h2>剧本与文案</h2></div>
+    <p>短剧剧本、品牌文案与文创策划案。点击卡片展开全文阅读。</p>
+  </div>
+  <div class="filter-bar reveal" data-filter-bar="doc"></div>
+  <div class="grid doc-grid" id="docGrid"></div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner reveal">
+    <div class="kicker">04 / CONTACT</div>
+    <h2>期待与你聊聊<br>下一个好故事</h2>
+    <p>如果你对 AIGC 内容创作、短剧开发或品牌视觉合作感兴趣，欢迎联系。</p>
+    <div class="contact-actions">
+      <a class="btn btn-light" href="mailto:1207093768@qq.com">发送邮件</a>
+      <button class="btn btn-outline" id="copyEmail" data-email="1207093768@qq.com">复制邮箱</button>
+    </div>
+    <div class="contact-mail">1207093768@qq.com</div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">© 2026 王庆雨 · 保留所有作品权利</div>
+  <div class="footer-right">AIGC 影像 · 剧本策划 · 文创设计</div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="关闭">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast">邮箱已复制</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
